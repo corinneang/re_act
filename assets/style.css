@@ -1,0 +1,256 @@
+@font-face {
+    font-family: monobloc-sans;
+    src: url(Monobloc-Regular.woff) format(woff),
+         url(Monobloc-Regular.woff2) format(woff2);
+         font-weight: normal;
+         font-style: normal;
+}
+
+.brushscript {
+    font-family: brush-script-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.duos {
+    font-family: duos-brush, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    font-family: "monobloc-sans";
+    -webkit-font-smoothing: antialiased;
+    font-size: 1rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: "brush-script-std";
+    line-height: 0;
+    font-size: 2rem;
+    letter-spacing: -2px;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    display: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    margin: 15px;
+    transition: color 200ms ease-in-out;
+}
+
+a:hover {
+    cursor: help;    
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+    text-decoration-thickness: 1.5px;
+}
+
+nav {
+    width: 100%;
+}
+
+.justify {
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+
+}
+
+.center {
+    align-self: center;
+    height: 70%;
+    width: 60%;
+    transform: translatey(-5%);
+}
+
+.window {
+    background: white;
+    border: black solid 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 100%;
+    overflow: scroll;
+    position: relative;
+}
+
+#field {
+    top: 0;
+    left: 0;
+    align-self: center;
+    height: 30rem;
+    width: 50rem;
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+    transform: scale(5.3);
+    padding: 1rem;
+}
+
+#field > button {
+    background: white;
+    border: black solid 1px;
+    margin: 0;
+}
+#field > button:hover {
+    background: black;
+    cursor: pointer;
+}
+
+#exterior-popup {
+    position: relative;
+}
+
+
+.popup{
+    position: absolute;
+    z-index: 10;
+}
+
+  
+
+  .inarow {
+      display: flex;
+  }
+
+  .textcontain {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    display:none;
+  }
+
+.spoken {
+    position: absolute;
+    top: 15.5%;
+    width: 18.75%;
+    height: 70%;
+    margin: 0 10px 0 10px;
+    overflow: scroll;
+}
+
+.references {
+    position: absolute;
+    top: 15.5%;
+    width: 18.75%;
+    height: 70%;
+    right: 0;
+    margin: 0 10px 0 10px;
+    overflow: scroll;
+}
+
+.references > button {
+    background: none;
+    border: none;
+    margin: 0 0 10px 0;
+    font-family: "monobloc-sans";
+    font-size: 1rem;
+}
+
+.references > button:hover {
+    cursor: cell;    
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+    text-decoration-thickness: 1.5px;
+}
+
+
+.modal {
+    transform: scale(0);
+    position: absolute;
+    width: 20rem;
+    height:fit-content;
+    border: black solid 1px;
+    background: white;
+    z-index: 10;
+}
+
+  
+  .modal.active {
+    transform: scale(1);
+  }
+
+.draggable {
+    padding: 10px;
+    cursor: move;
+}
+
+.draggable > button {
+    background: none;
+    border: none;
+    font-family: "monobloc-sans";
+    font-size: 1rem;
+}
+
+.draggable > button:hover {
+    cursor: pointer;
+}
+
+  .hidden {
+      display: none;
+  }
+
+  
+/* selection */
+::selection {
+    background:black;
+    color:white;
+  }
+
+
+
+  /* slider */
+  input[type="range"] {
+    -webkit-appearance: none;
+   }
+   
+   input[type="range"]:focus {
+    outline: none;
+   }
+
+   input[type="range"]::-webkit-slider-runnable-track {
+    background: white;
+    border: black solid 1px;
+    height: 5px;
+    border-radius: 2.5px;
+   }
+   
+   input[type="range"]::-moz-range-track {
+    background: white;
+    border: black solid 1px;
+    height: 5px;
+    border-radius: 2.5px;
+   }
+
+   input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    background: white;
+    border: black solid 1px;
+    margin-top: -5px;
+    border-radius: 50%;
+   }
+   
+   input[type="range"]::-moz-range-thumb {
+    height: 15px;
+    width: 15px;
+    background: white;
+    border: black solid 1px;
+    margin-top: -5px;
+    border-radius: 50%;
+   }

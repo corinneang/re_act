@@ -1,0 +1,149 @@
+    <!DOCTYPE html>
+    <html lang="en" dir="ltr">
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+            <!-- metadata -->
+            <meta name="title" content="Re (act)">
+            <meta name="description" content="Corinne Ang / Degree Project Spring 2021 / Advised by Kelsey Dusenka">
+    
+        <title>Re (act)</title>
+    
+            <!-- all the diff favicons favicon-generator
+            <link rel="apple-touch-icon" sizes="57x57" href="assets/images/apple-icon-57x57.png">
+            <link rel="apple-touch-icon" sizes="60x60" href="assets/images/apple-icon-60x60.png">
+            <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-icon-72x72.png">
+            <link rel="apple-touch-icon" sizes="76x76" href="assets/images/apple-icon-76x76.png">
+            <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-icon-114x114.png">
+            <link rel="apple-touch-icon" sizes="120x120" href="assets/images/apple-icon-120x120.png">
+            <link rel="apple-touch-icon" sizes="144x144" href="assets/images/apple-icon-144x144.png">
+            <link rel="apple-touch-icon" sizes="152x152" href="assets/images/apple-icon-152x152.png">
+            <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-icon-180x180.png">
+            <link rel="icon" type="image/png" sizes="192x192"  href="assets/images/android-icon-192x192.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon-96x96.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+            <link rel="manifest" href="assets/images/manifest.json">
+            <meta name="msapplication-TileColor" content="#ffffff">
+            <meta name="msapplication-TileImage" content="assets/images/ms-icon-144x144.png">
+            <meta name="theme-color" content="#ffffff">
+     --> 
+
+    <!--css-->
+    <link rel="stylesheet" href="assets/style.css">
+
+    <!--importing fonts from typekit-->
+    <link rel="stylesheet" href="https://use.typekit.net/ftc0qqu.css">
+   
+    <!--javascript-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script defer src="script.js"></script>
+<script>
+    $( function() {
+      $( ".draggable" ).draggable();
+      let dragA = 1 - (rect1.left) / $(this).height();
+    } );
+    </script>
+</head>
+
+<body>
+<nav>
+    <a  style="right:0;">
+        ABOUT
+    </a>
+    <a href="https://www.corinneang.com" style="right:0; bottom: 0;">
+        CORINNE ANG
+    </a>
+    <div style="position: absolute; bottom:0; margin: 10px;">
+        RISD GD DEGREE PROJECT
+    </div>
+    <div style="position: absolute; margin: 10px;">
+        PRESENTED ON MAY 28 2021, 11:15
+    </div>
+</nav>
+
+
+
+<section >
+    <div class="middletext textcontain" >
+        <div class="spoken" id="demo"> 
+        </div>
+            <div class="references">
+                <button data-modal-target="#modal1">[1] Reference</button><br>
+                <button data-modal-target="#modal2">[2] Project</button><br>
+                <button>[3] Reference</button>
+            </div>
+    </div>
+
+    <div class="middletext hidden modal draggable" id="modal1" style="bottom:3rem; right: 2rem;">
+        <button data-close-button class="close-button">&times;</button><br>
+        imagaine this is some sort of reference/ quote or something...
+    </div>
+
+</section>
+
+
+<section class="justify">
+    <div class="center">
+        <div style="display: flex;">
+            <div style="flex-grow: 0.25;">RE:</div>
+            <div style="flex-grow: 9.75;"><h1 class="middletext">(ACT)</h1></div>
+
+        </div>
+        <div class="window">
+  
+           <div  class="draggable" style="height:100%;">
+            <div id="modal2" class="popup draggable middletext modal" style="left: 50%; top: 50%;">
+                <button data-close-button class="close-button">&times;</button><br>
+                asdfasdfasdf
+               </div>
+            <div id="field">
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+
+                <button></button>
+                <button></button>
+                <button class="middle" onclick="typeWriter()"></button>
+
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+            </div>
+        </div>
+        </div>
+
+        <div data-axes="zoom" class="inarow" style="display: flex;
+        justify-content: space-around;">
+            <div class="inarow">
+              <div class="min">ZOOM OUT</div>
+              <input id="zoom" data-type="zoom" class="range axis-range menu" type="range" min="0.10" max="5.30" step="0.01" value="5.30">
+              <div class="max">ZOOM IN</div>
+            </div>
+        </div>   
+
+    </div>
+</section>
+</body>
