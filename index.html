@@ -53,7 +53,7 @@
 
 <body>
 <nav>
-    <a  style="right:0;">
+    <a data-modal-target="#modal3" style="right:0;">
         ABOUT
     </a>
     <a href="https://www.corinneang.com" style="right:0; bottom: 0;">
@@ -67,10 +67,11 @@
     </div>
 </nav>
 
-<section class="justify modal active" style="position: fixed; z-index: 100;">
+<section id="modal3" class="justify modal" style="width: 100%; position: fixed; z-index: 100;">
     <div class="center">
-        <div class="window">
-            asdfasdf
+        <div class="window" style="transform: translatey(3%); padding: 10px;">
+            <button data-close-button class="close-button">&times;</button><br>
+            about
         </div>
     </div>
 
@@ -109,8 +110,7 @@
            <div  class="draggable" style="height:100%;">
             <div id="field">
                 <div id="modal2" class="modal popup draggable" >
-                    <button data-close-button class="close-button">&times;</button>
-                    <span>title</span>
+                        <img>
                    </div>
                 <button></button>
                 <button></button>

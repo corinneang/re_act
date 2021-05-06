@@ -61,9 +61,15 @@ span {
     font-family: "duos-brush";
     font-size: 0.5rem;
     line-height: 0;
+    padding:0 2px;
 }
 
 nav {
+    width: 100%;
+
+}
+
+img {
     width: 100%;
 }
 
@@ -123,11 +129,14 @@ nav {
 .popup{
     position: absolute;
     z-index: 10;
-    width:5rem;
+    width:8rem;
     left: 50%; 
     top: 50%;
     transform: translate(-50% -50%);
-    padding: 2px;
+    padding: 0px;
+    background: black;
+    color: white;
+    height: 5rem;
 }
 
   
@@ -183,9 +192,6 @@ nav {
 .modal {
     transform: scale(0);
     position: absolute;
-    height:fit-content;
-    border: black solid 1px;
-    background: white;
     z-index: 10;
 }
 
@@ -212,6 +218,9 @@ nav {
       display: none;
       width: 20rem;
       padding: 10px;
+      border: black solid 1px;
+      background: white;
+      height:fit-content;
   }
 
   
