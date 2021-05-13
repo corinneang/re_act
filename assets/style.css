@@ -140,10 +140,15 @@ img {
     padding: 0;
 }
 
-.sidebyside > p, ul {
+.sidebyside > p {
     width: 30%;
     height: 100%;
-    overflow: scroll;
+}
+
+.sidebyside > ul {
+    width: 30%;
+    height: 100%;
+    overflow-y: scroll;
 }
 
 .relative {
@@ -215,7 +220,7 @@ img {
     width: calc(50vw - 26rem);
     height: 30rem;
     margin: 0 10px 0 10px;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .references {
@@ -225,7 +230,7 @@ img {
     height: 30rem;
     right: 0;
     margin: 0 10px 0 10px;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .references > button {
@@ -349,7 +354,7 @@ img {
 
    .dropdown {
        max-height: 26rem;
-       overflow: scroll;
+       overflow-y: scroll;
    }
 
    #typeit {
