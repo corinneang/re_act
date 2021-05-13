@@ -1,10 +1,16 @@
 @font-face {
-    font-family: monobloc-sans;
-    src: url(Monobloc-Regular.woff) format(woff),
-         url(Monobloc-Regular.woff2) format(woff2);
+    font-family: "monobloc-sans";
+    src: url("Monobloc-Regular.woff") format(woff),
+         url("Monobloc-Regular.woff2") format(woff2);
          font-weight: normal;
          font-style: normal;
 }
+
+@font-face {
+    font-family: "Monobloc-Variable";
+    src: url("monoblocvariable.ttf") format("truetype-variations");
+  }
+
 
 .brushscript {
     font-family: brush-script-std, sans-serif;
@@ -19,12 +25,15 @@
 }
 
 :root {
-    font-family: "monobloc-sans";
+    font-family: "Monobloc-Variable";
+    font-variation-settings: "wght" 400;
     -webkit-font-smoothing: antialiased;
     font-size: 1rem;
 }
 
 body {
+    font-family: "monobloc-sans";
+    -webkit-font-smoothing: antialiased;
     margin: 0;
     padding: 0;
 }
@@ -38,8 +47,30 @@ h1 {
     padding: 0;
     -webkit-font-smoothing: antialiased;
     text-align: center;
-    display: none;
 }
+
+ul {
+    padding: 0;
+    width: 100%;
+    font-family: "Monobloc-Variable";
+    font-variation-settings: "wght" 750;
+}
+
+li {
+    list-style-type: none;
+    margin-top: 10px;
+    margin-right: 1rem;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    font-family: "Monobloc-Variable";
+    font-variation-settings: "wght" 400;
+}
+
+li > img {
+    width: 100%;
+    height: auto;
+}
+
 
 a {
     color: black;
@@ -47,6 +78,11 @@ a {
     position: absolute;
     margin: 15px;
     transition: color 200ms ease-in-out;
+}
+
+.sidebyside > p > a {
+    margin: 0;
+    position:relative;
 }
 
 a:hover {
@@ -57,9 +93,15 @@ a:hover {
     text-decoration-thickness: 1.5px;
 }
 
+p {
+    margin: 15px;
+    padding: 0;
+
+}
+
 span {
     font-family: "duos-brush";
-    font-size: 0.5rem;
+    font-size: 1rem;
     line-height: 0;
     padding:0 2px;
 }
@@ -81,19 +123,38 @@ img {
 
 }
 
+.sidebyside {
+    display: flex;
+    justify-content:space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebyside > p, ul {
+    width: 30%;
+    height: 100%;
+    overflow: scroll;
+}
+
+.relative {
+    position: relative;
+}
+
 .center {
     align-self: center;
     height: 70%;
     width: 60%;
-    transform: translatey(-5%);
+    transform: translateY(-5%);
 }
 
 .window {
+    align-self: center;
     background: white;
     border: black solid 1px;
     margin-top: 10px;
     margin-bottom: 10px;
-    height: 100%;
+    height: 30rem;
+    width:50rem;
     overflow: hidden;
     position: relative;
 }
@@ -108,8 +169,8 @@ img {
     grid-gap: 8px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
-    transform: scale(5.3);
-    padding: 1rem;
+    transform: scale(5.1);
+
 }
 
 #field > button {
@@ -121,26 +182,10 @@ img {
     background: black;
     cursor: pointer;
 }
-
-#exterior-popup {
-    position: relative;
-}
-
-
-.popup{
-    position: absolute;
-    z-index: 10;
-    width:8rem;
-    left: 50%; 
-    top: 50%;
-    transform: translate(-100% -100%);
-    padding: 0px;
-    background: black;
-    color: white;
-    height: 5rem;
-}
-
-  
+ #slider {
+    display: flex;
+    justify-content: space-around;
+ } 
 
   .inarow {
       display: flex;
@@ -151,14 +196,14 @@ img {
     height: 100%;
     width: 100%;
     z-index: 0;
-    display:none;
+
   }
 
 .spoken {
     position: absolute;
     top: 15.5%;
-    width: 18.75%;
-    height: 70%;
+    width: calc(50vw - 26rem);
+    height: 30rem;
     margin: 0 10px 0 10px;
     overflow: scroll;
 }
@@ -166,8 +211,8 @@ img {
 .references {
     position: absolute;
     top: 15.5%;
-    width: 18.75%;
-    height: 70%;
+    width: calc(50vw - 26rem);
+    height: 30rem;
     right: 0;
     margin: 0 10px 0 10px;
     overflow: scroll;
@@ -181,6 +226,11 @@ img {
     font-size: 1rem;
 }
 
+.references > div {
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 10px;
+}
+
 .references > button:hover {
     cursor: cell;    
     color: rgba(0, 0, 0, 0.5);
@@ -192,8 +242,11 @@ img {
 
 .modal {
     transform: scale(0);
-    position: absolute;
+    position: fixed;
     z-index: 10;
+    width: 100%;
+    height: 100%;
+    transition: 400ms ease-in-out;
 }
 
   .modal.active {
@@ -273,4 +326,18 @@ img {
     border: black solid 1px;
     margin-top: -5px;
     border-radius: 50%;
+   }
+
+   .dropdown-head {
+       position:relative;
+       margin:0;
+   }
+
+   .dropdown-head:hover {
+    cursor: cell;
+   }
+
+   .dropdown {
+       max-height: 26rem;
+       overflow: scroll;
    }
