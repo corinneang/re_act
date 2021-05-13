@@ -372,6 +372,45 @@ img {
        background-size: 100% 100%;
        background-repeat:no-repeat;
    }
+   #typeit4 {
+    background-image: url('images/tiles/tile4.jpg');
+       background-size: 100% 100%;
+       background-repeat:no-repeat;
+   }
+   #typeit5 {
+    background-image: url('images/tiles/tile5.jpg');
+       background-size: 100% 100%;
+       background-repeat:no-repeat;
+   }
+   #typeit6 {
+    background-image: url('images/tiles/tile6.jpg');
+       background-size: 100% 100%;
+       background-repeat:no-repeat;
+   }
+   #typeit7 {
+    background-image: url('images/tiles/tile7.jpg');
+       background-size: 100% 100%;
+       background-repeat:no-repeat;
+   }
+   #typeit8 {
+    background-image: url('images/tiles/tile8.jpg');
+       background-size: 100% 100%;
+       background-repeat:no-repeat;
+   }
+   #typeit9 {
+    background-image: url('images/tiles/tile9.jpg');
+       background-size: 100% 100%;
+       background-repeat:no-repeat;
+   }
+   #typeit10 {
+    background-image: url('images/tiles/tile10.jpg');
+       background-size: 100% 100%;
+       background-repeat:no-repeat;
+   }
+
+
+
+
 
    .back {
        display: flex;
