@@ -507,3 +507,9 @@ img {
     height: 100%;
     width: auto;
 }
+
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+  
