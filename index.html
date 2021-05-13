@@ -41,6 +41,7 @@
     <!--javascript-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="jquery.flip.min.js"></script>
 
 <script defer src="script.js"></script>
 <script>
@@ -65,7 +66,7 @@
         CORINNE ANG
     </a>
     <a data-modal-target="#work" style="margin: 10px; bottom: 0;">
-        FULL WORK INDEX
+        FULL WORK INDEX & DOCUMENTATION
     </a>
 </nav>
 
@@ -76,8 +77,8 @@
            <p>FULL WORK INDEX</p>
            <div class="sidebyside">
             <p style="width: 30%;">To the right see all the work completed as a part of the exploration in this degree project in no particular order.</p>
-            <div  style="width: 65%; height: 30rem;">
-            <ul style="width: 100%;">
+            <div  style="width: 65%; height: 30rem; overflow: scroll;">
+            <ol style="width: 100%;">
                 TITLE <span>FORM</span>:
                 <li>
                 <a id="work1" class="dropdown-head">RE(ACT)<span>(WORK)BOOK</span></a>
@@ -138,7 +139,7 @@
                 <li>
                     <a class="dropdown-head">THIS IS A CRITIQUE<span>INSTALLATION, WEBSITE & ZINE</span></a>
                 </li>
-            </ul>
+            </ol>
         </div>
            </div>
     </div>
@@ -201,7 +202,8 @@
             <div class="references">
                 <button id="ref1" class="refgroup1">[1] Reference</button><br>
                 <div id="ref1cont">asdfadsf</div>
-                <button class="refgroup1">[2] Reference</button><br>
+                <button id="ref2" class="refgroup1">[2] Reference</button><br>
+                <div id="ref2cont">asdfadsf</div>
                 <button class="refgroup1">[3] Reference</button><br>
                 <button class="refgroup2">[4] blob</button><br>
                 <button class="refgroup2">[5] blob</button><br>
@@ -242,9 +244,23 @@
 
                 <button></button>
                 <button></button>
-                <button id="typeit"></button>
+                <button id="typeit">
+                    <div id="back" class="back">
+                    <div>
+                        3.
+                        <img src="assets/images/risoflipbook-insta.gif">
+                    </div>
+                     </div>
+                </button>
 
-                <button id="typeit2"></button>
+                <button id="typeit2" class="flip">
+                    <div id="back2" class="back">
+                        <div>
+                            3.
+                            <img src="assets/images/risoflipbook-insta.gif">
+                        </div>
+                         </div>
+                </button>
                 <button></button>
                 <button></button>
                 <button></button>

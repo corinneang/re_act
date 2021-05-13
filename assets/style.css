@@ -56,14 +56,24 @@ ul {
     font-variation-settings: "wght" 750;
 }
 
+ol {
+    padding: 0;
+    width: 100%;
+    font-family: "Monobloc-Variable";
+    font-variation-settings: "wght" 750;
+}
+
 li {
-    list-style-type: none;
     margin-top: 10px;
     margin-right: 1rem;
     padding-bottom: 10px;
     border-bottom: 1px solid black;
     font-family: "Monobloc-Variable";
     font-variation-settings: "wght" 400;
+}
+
+ul > li {
+    list-style-type: none;
 }
 
 li > img {
@@ -174,12 +184,12 @@ img {
 }
 
 #field > button {
-    background: white;
+    font-family: 'Monobloc-Variable';
     border: black solid 1px;
     margin: 0;
+    padding:0;
 }
 #field > button:hover {
-    background: black;
     cursor: pointer;
 }
  #slider {
@@ -341,3 +351,36 @@ img {
        max-height: 26rem;
        overflow: scroll;
    }
+
+   #typeit {
+    background-image: url('images/tiles/tile1.jpg');
+       background-size: 100% 100%;
+       background-repeat:no-repeat;
+   }
+   #typeit2 {
+    background-image: url('images/tiles/tile2.jpg');
+       background-size: 100% 100%;
+       background-repeat:no-repeat;
+   }
+
+   .back {
+       display: flex;
+       justify-content: space-around;
+       background:black;
+       color: white;
+       background-size: 100% 100%;
+       position: relative;
+       height: 5.5rem;
+   }
+
+   .back > div {
+       align-self: center;
+       height: 5.2rem;
+       width: 95%;
+       font-size: 0.25rem;
+   }
+   .back > div >img {
+    align-self: center;
+    height: 100%;
+    width: auto;
+}

@@ -23,15 +23,18 @@ function sectionTwo() {
 $(function(){
     $('.refgroup1').hide();
     $('.refgroup2').hide();
+    $('#back').hide();
     $('#typeit').click(function(){
         i = 0;
         $('#demo').html('');
         sectionOne();
         $('#title').html('(ACT)');
         $('.refgroup1').show();
+        $('#back').show();
     });
 
     $('#slider').hide();
+    $('#back2').hide();
     $('#typeit2').click(function(){
         i = 0;
         $('#demo').html('');
@@ -39,11 +42,16 @@ $(function(){
         $('#title').html('FLECTING'); 
         $('#slider').show();
         $('.refgroup2').show();
+        $('#back2').show();
     });
 
     $('#ref1cont').hide();
     $('#ref1').click(function(){
         $('#ref1cont').toggle();
+    });
+    $('#ref2cont').hide();
+    $('#ref2').click(function(){
+        $('#ref2cont').toggle();
     });
 
     $('#dropdown1').hide();
@@ -55,6 +63,12 @@ $(function(){
     $('#work2').click(function(){
         $('#dropdown2').toggle();
     });
+
+
+
+ //       $(".flip").flip({
+   //         axis: 'x'
+    //    });
 });
 
 
