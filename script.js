@@ -35,7 +35,7 @@ $(function(){
 
     $('#slider').hide();
     $('#back2').hide();
-    $('#typeit2').click(function(){
+    $('#typeit4').click(function(){
         i = 0;
         $('#demo').html('');
         sectionTwo();
@@ -111,6 +111,14 @@ $('#zoom').on('input', function(){
     console.log(zoomValue);
     $('#field').css('transform', 'scale('+zoomValue+')');
 
+});
+
+//moving field
+$('#move').click(function(event) {
+    $("#field").css({
+        "--trsy": 100,
+        "--scale": 4.8
+    });	
 });
 
 //toggling
