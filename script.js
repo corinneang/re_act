@@ -1,22 +1,79 @@
 //self typing
 var i = 0;
-var copy = ['“Where are you from?” has been a question I dread in casual conversation. I know that people are looking for a simple answer, but it sets off a bizarre internal debate on how to respond. I grew up as a third culture kid (TCK), a diasporic body [1]; perching on the fences between different cultures and spaces. The place I grew up in, the culture I was raised with, the education I received, and the media I consumed all originated from varying histories and narratives. Navigating these interconnected parts of myself quickly became increasingly complex. Complexity which doesn’t fit into the contemporary world that constantly asks for simpler stories and answers. More often than not I find it difficult to enter spaces when the narrative boxes offered to fit in are so limiting. As someone consistently forced to work within the frameworks of others I question if there is a way of undoing this means of control through a tool utilized to "organize" and simplify: graphic design. I question if there are frameworks that allow for an opening of space, exploration and fluidity. This brought me to consider where I saw this most naturally: on commutes watching the facade of the city and it’s communities passing by. To the right is a rumination on the visual manifestation of this through a Risograph-ed flipbook.', 
-'Moving between multiple cultures and spaces the commutes I embarked on day to day became a comforting ritual no matter where I was in the world. Without fail everyday I would sit down, feel the motion and watch the environment come to life. Like my TCK upbringing, the commute is a space in-between which I’ve found to be grounding in a constantly shifting world. Whizzing past are these beautifully abstract and instantaneous impressions of these places. When you finally slow, you can see all the stories within communities that happen when the visual facade of the city and the people interact. Imprinted into my mind are the boisterous neon signs that lined buildings in Hong Kong calling out to people with English and Chinese side by side. Whizzing past were the hand-painted flourishing letters of Manila, announcing the destination of the vehicles they were on and hinting to their Spanish & American colonial past. Inherently there is this notion of the individual impacting the whole. Space made for the implementation of multiplicity. Akin to a frame by frame animation, mutliple perspectives come together to form a narrative. This site works similarly, with each tile contributing to the whole image.'];
-var speed = 60; /* The speed/duration of the effect in milliseconds */
+// var copy = ['“Where <em>are</em> you <strong>from</strong>?” has been a <em>question</em> I dread in casual conversation. I know that people are looking for a simple answer, but it sets off a bizarre internal debate on how to respond. I grew up as a third culture kid (TCK), a diasporic body [1]; perching on the fences between different cultures and spaces. The place I grew up in, the culture I was raised with, the education I received, and the media I consumed all originated from varying histories and narratives. Navigating these interconnected parts of myself quickly became increasingly complex. Complexity which doesn’t fit into the contemporary world that constantly asks for simpler stories and answers. More often than not I find it difficult to enter spaces when the narrative boxes offered to fit in are so limiting. As someone consistently forced to work within the frameworks of others I question if there is a way of undoing this means of control through a tool utilized to "organize" and simplify: graphic design. I question if there are frameworks that allow for an opening of space, exploration and fluidity. This brought me to consider where I saw this most naturally: on commutes watching the facade of the city and it’s communities passing by. To the right is a rumination on the visual manifestation of this through a Risograph-ed flipbook.'];
+var section1 = '“Where are you from?” has been a question I dread in casual conversation. I know that people are looking for a simple answer, but it sets off an internal debate on how to respond. I grew up as a third culture kid (TCK), a diasporic body; perching on the fences between different cultures and spaces. Navigating these interconnected parts of myself quickly became increasingly complex. Complexity which doesn’t fit into the contemporary world that constantly asks for simpler stories and answers. More often than not I find it difficult to enter spaces when the narrative boxes offered to fit in are so limiting. As someone consistently forced to work within the frameworks of others I question if there is a way of undoing this means of control through a tool utilized to "organize" and simplify: graphic design. <em>I</em> <em>question</em> <em>if</em> <em>there</em> <em>are</em> <em>frameworks</em> <em>that</em> <em>allow</em> <em>for</em> <em>an</em> <em>opening</em> <em>of</em> <em>space,</em> <em>exploration</em> <em>and</em> <em>fluidity.</em> This brought me to consider where I saw this most naturally: on commutes watching the facade of the city and it’s communities passing by. To the right is a rumination on the visual manifestation of this through a Risograph-ed flipbook.';
+var section2 = 'Moving between multiple cultures and spaces the commutes I embarked on day to day became a comforting ritual no matter where I was in the world. Without fail everyday I would sit down, feel the motion and watch the environment come to life. Like my TCK upbringing, the commute is a space in-between which I’ve found to be grounding in a constantly shifting world. Whizzing past are these beautifully abstract and instantaneous impressions of these places. When you finally slow, you can see all the stories within communities that happen when the visual facade of the city and the people interact. Imprinted into my mind are the boisterous neon signs that lined buildings in Hong Kong calling out to people with English and Chinese side by side. Whizzing past were the hand-painted flourishing letters of Manila, announcing the destination of the vehicles they were on and hinting to their Spanish & American colonial past. Inherently there is this notion of the individual impacting the whole. Space made for the implementation of multiplicity. Akin to a frame by frame animation, mutliple perspectives come together to form a narrative. This site works similarly, with each tile contributing to the whole image.';
+var speed = 230; /* The speed/duration of the effect in milliseconds */
+
+// function sectionOne() {
+//   if (i < copy[1].length) {
+//     document.getElementById('demo').innerHTML += copy[0].charAt(i);
+//     i++;
+//     setTimeout(sectionOne, speed);
+//   }
+// }
 
 function sectionOne() {
-  if (i < copy[1].length) {
-    document.getElementById('demo').innerHTML += copy[0].charAt(i);
-    i++;
-    setTimeout(sectionOne, speed);
+    let words1 = section1.split(' ');
+
+    if (i < words1.length) {
+        let word = words1[i];
+        document.getElementById('demo').innerHTML += word + " ";
+        i++;
+
+        setTimeout(sectionOne, speed);
+
+        // let this_text = '';
+        // let special = false;
+        // if( word.includes('<em>')){
+        //     this_text = word.split('<em>')[1].split('</em>')[0]; //this gives [<em>, word</em>]
+        //     special = true;
+        // }else{
+        //     this_text = word;
+        // }
+        // // console.log(this_text);
+        
+        // let j = 0;
+        // // console.log(this_text.length, 'length');
+
+
+
+        // function loopthroughWord(){
+        //     if ( j < this_text.length ){
+        //         if( special){
+        //             $('#demo').append('<em>'+this_text+'</em>');
+        //             j = this_text.length;
+        //         }else{
+        //             document.getElementById('demo').innerHTML += this_text.charAt(j);
+        //             j++
+        //             setTimeout(loopthroughWord, speed);
+        //         }   
+        //     }else{
+        //         i++;
+        //     }              
+        //     document.getElementById('demo').innerHTML += " ";
+        //     setTimeout(sectionOne, speed);
+        // }
+        // loopthroughWord();
+
+    }
   }
-}
 
 function sectionTwo() {
-    if (i < copy[1].length) {
-      document.getElementById('demo').innerHTML += copy[1].charAt(i);
-      i++;
-      setTimeout(sectionTwo, speed);
+
+    let words2 = section2.split(' ');
+
+    if (i < words2.length) {
+        let word = words2[i];
+        document.getElementById('demo').innerHTML += word + " ";
+        i++;
+
+        setTimeout(sectionTwo, speed);
+
+   // if (i < copy[1].length) {
+  //    document.getElementById('demo').innerHTML += copy[1].charAt(i);
+    //  i++;
+     // setTimeout(sectionTwo, speed);
     }
   }
 

@@ -132,6 +132,14 @@ span {
     -webkit-text-fill-color: black;
 }
 
+em {
+    font-family: "duos-brush";
+    font-size: 1rem;
+    line-height: 0;
+    font-style: normal;
+}
+
+
 nav {
     width: 100%;
     position: fixed;
