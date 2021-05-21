@@ -95,19 +95,30 @@ li > img {
     height: auto;
 }
 
-
 a {
     color: black;
     text-decoration: none;
-    position: absolute;
-    margin: 15px;
-    transition: color 200ms ease-in-out;
+    transition: color 150ms ease-in-out;
 }
 
-.sidebyside > p > a {
-    margin: 0;
-    position:relative;
+a.close-button {
+    margin: 15px;
+    position: absolute;
+    transition: color 150ms ease-in-out;
 }
+
+a.close-button:hover {
+    cursor: pointer;    
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+nav > a {
+    margin: 15px;
+    position: absolute;
+}
+
+
 
 a:hover {
     cursor: help;    
@@ -139,6 +150,10 @@ em {
     font-style: normal;
 }
 
+strong {
+    font-variation-settings: "wght" 700;
+}
+
 
 nav {
     width: 100%;
@@ -162,6 +177,13 @@ img {
     justify-content:space-between;
     margin: 0;
     padding: 0;
+    height: 30rem;
+}
+
+.up-down {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .sidebyside > p {
@@ -245,9 +267,12 @@ img {
 }
 .mini-field > div {
     border: black solid 1px;
-    background: 0;
     margin: 0;
     padding:0;
+}
+
+.blackfill {
+    background: black;
 }
 
   .inarow {
