@@ -8,7 +8,7 @@ var section4 = 'A case study about Maurice R. Stein <strong>[5]</strong> discuss
 var section5 = 'While I had explored how reconsidering systems of engagement gave space to those typically not in control I also wondered how this could happen visually. So I returned to the commute. As I sat in traffic back in Manila I took photos of signage. As I researched, I found that while they are indicative of the cultural identity of Filipinos they also reveal the inescapable history of oppression that occurred during hundreds of years of colonization.<strong>[7]</strong> The Spanish utilized language and writing systems as a way to leverage power over the Filipino people in an attempt to “civilize” them by erasing the native Baybayin script and imposing the Latin writing system.<strong>[8]</strong> Our systems of expression are ones that came from years of oppression. While putting together this display containing my collection, I questioned: how did they become a space for our self-expression?';
 var section6 = 'I started by drawing these letterforms myself.<strong>[9]</strong> I noticed I didn’t feel the power of my colonizers. It was because Filipinos added, complexified and reformed the oppressive space so that they could flourish and express themselves. When they couldn’t rewind and remove they rebuilt and reshaped instead. This display showed that the practice of making letters allows space for reflection, prayer and meditation that brings together communities in the face of oppressive systems. To wrap it up I ran a zoom workshop for community building and expression through collective letter drawing.';
 var section7 = 'Yes, I’ve been using a lot of <em>re</em>___ words. In a way I’ve been using the structure of the Mad Libs fill in the blank as this presentation is called Re_(ACT)__. But, baked into the prefix <em>re</em> is the ability to address the past while considering the present. I found myself utilizing re words often when I was considering what it was like to be a WOC in a eurocentric, patriarchal society/institution. Through an event that occurred this year I realized that as an “othered” body I am constantly asked to reframe my experiences for the authoritative voice. As such the way that I have navigated my world has been shaped by this fact and so writing about this wraps around the book about this DP as a dust jacket that frames the interior';
-var section8 = 'During this process I also had the privilege of holding insightful conversations with three designers about their careers and beliefs. The transcripts are logged within my book. In my conversation with Shiraz Gallab<strong>[10]</strong> we discussed this notion of reframing. She pointed me to Homi K. Bhabha’s Of Mimicry and Man.<strong>[11]</strong> Bhabha says that as diasporic/colonized bodies we are forced into the structures of others (mimicry), however through a misuse or subversion of use of their systems we can undermine their power (mockery).';
+var section8 = 'During this process I also had the privilege of holding insightful conversations with three designers about their careers and beliefs. The transcripts are logged within my book. In my conversation with Shiraz Gallab<strong>[10]</strong> we discussed this notion of reframing. She pointed me to Homi Bhabha’s Of Mimicry and Man.<strong>[11]</strong> Bhabha says that as diasporic/colonized bodies we are forced into the structures of others (mimicry), however through a misuse or subversion of use of their systems we can undermine their power (mockery).';
 var section9 = 'While talking with Kristian Henson (Hardworking Goodlooking)<strong>[12]</strong> he noted that reframing often takes form as code switching and is used as a survival tactic. He stated the power of misuse in order to codify this oppressive system to turn it into communication for your community (e.g Blues music or Filipino letterforms). We all enter spaces with different understandings that come from our personal memories and offer different perspectives that codify the space and inform others around them.';
 var section10 = 'I then inspected how I was engaging with all these thoughts. From it I made this diagram that analyses how my work functions. The graphic form produced works as a meeting place where my input and various individuals’ realities connect. Each of our perspectives influence one another and the way that the graphic form’s space functions. Similar to this idea of the individual influencing the whole in the city scape or within code switching and lettermaking. Community is built through a collective contribution and agency within a single object.';
 var section11 = 'All this reminded me of the phrase “It takes a village to raise a child”. A single person’s story is intertwined and built from individual pieces of culture, people and stories coming together just as a village comes together to raise a child. Reflected in the memories of our childhood we see emotive interpretations of the villages that raised us. Looking to my Filipino roots of letter making as a way of expressing collective memory, I made this project Barangay. A barangay is the Filipino equivalent to a village. Barangay paints a portrait of the intertwining pieces of my upbringing as a Filipino-Chinese third culture kid through the medium of letterforms. Together multiple type families come together as a barangay.';
@@ -18,14 +18,14 @@ var section14 = 'So I wanted to further explore this ability to provide space th
 var section15 = 'Here letterforms become a framework to reshape and become a shared reality both in language and in form. So I held a little workshop with the stencils prompting users with “I look out the window and I dream”, asking for meditative subconscious form making through the framework of the stencils.';
 var section16 = 'Typography can also be viewed as a metaphor for different spaces fitting together. Because in drawing it you have to consider this and in its use my space (as type designer) meets your space (as user). Thinking about personal space meeting larger spaces reminds me of feng shui.<strong>[14]</strong> This variable typeface Winder is inspired by this. ';
 var section17 = 'Winder’s forms were drawn thinking of the flow of space and how the texture of typographic form can represent it. It is able to interpolate between a flowing form and a blocked off form. The web specimen engages with feng shui further through moves like having your cursor’s position affect the typographic form etc.';
-var section18 = 'So I thought about how I could bring Winder back into the home space that I originally experienced feng shui in. This rug is a result of this. I started to think about how the rearranging action in feng shui is shared with the rearranging act of diasporic bodies to assimilate and camouflage. So I drew the language of mimicry and mockery from Bhabha’s Of Mimicry and Man<strong>[11]</strong> that engages with this concept and the patterns of chameleons (a creature that hides) and made a rearrangeable modular rug that shapes itself to the flow of your home.';
+var section18 = 'So I thought about how I could bring Winder back into the home space that I originally experienced feng shui in. This rug is a result of this. I started to think about how the rearranging action in feng shui is shared with the rearranging act of diasporic bodies to assimilate and camouflage. So I drew the language of mimicry and mockery from Bhabha’s Of Mimicry and Man<strong>[11]</strong> that engages with this concept and the patterns of chameleons<strong>[15]</strong> (a creature that hides) and made a rearrangeable modular rug that shapes itself to the flow of your home.';
 var section19 = 'text 19';
 var section20 = 'By exploring all these different formats I found myself relinquishing control through all the work. At the core my work has become delineated, multiplicitous, sprawling and moveable manners in order to become reactive, asking and personal.';
 var section21 = 'In my work I question what happens when a voice is forced to populate the margins? I reclaim the act of reframing, reshaping and re__(ACT)__ing that I have been forced to do because to claim the margin gives me the power to walk around it’s border and sow seeds of thoughts. In doing so I am able to build a frame of my own. I take my frame and use it to reshape the way we look at the world. My frame is built to give others a space to play in and make their mark.';
 var section22 = 'The book that includes these thoughts pulls from all the strategies I discussed before. My thoughts are placed in the margin acting as a framing device for blank space for readers to implement themselves. Footnotes are moveable. Redaction, notation, rewriting are encouraged. The binding is not fixed and when you truly deconstruct the structure of the book and undo the french fold you are able to center marginalized voices.';
 var section23 = 'While I can do this in my personally produced work I thought it important to confront the institution that put me to the side and implement my thoughts there. Together with one of my peers I organized this display sharing the thoughts of my fellow WOC and how the systems of the institution have devalued them and let them down.';
 var section24 = 'Together we question how the institution can do the work to make this a better space for us. Together we ask others to question their actions and to start picking up the slack. At the core of all my work is a give and take. I ask the institution to centralize this notion and to stop ONLY taking from our marginalized communities.';
-var section25 = 'Finally that brings us to this site I coded. While the content is all mine, without my presence it gives agency to the user to experience this talk the way they want. This talk then becomes theirs. Thank you for coming and listening, I’m running out of Re words so I’ll open the floor for questions and discussion.<strong>[15]</strong>';
+var section25 = 'Finally that brings us to this website. While the content is all mine, without my presence it gives agency to the user to experience this talk the way they want. This talk then becomes theirs. Thank you for coming and listening, I’m running out of <em>Re</em> words so I’ll open the floor for questions and discussion.<strong>[16]</strong>';
 var speed = 245; /* The speed/duration of the effect in milliseconds */
 
 // function sectionOne() {
@@ -399,6 +399,29 @@ $(function(){
 
     $('.refgroup1').hide();
     $('.refgroup2').hide();
+    $('.refgroup3').hide();
+    $('.refgroup4').hide();
+    $('.refgroup5').hide();
+    $('.refgroup6').hide();
+    $('.refgroup7').hide();
+    $('.refgroup8').hide();
+    $('.refgroup9').hide();
+    $('.refgroup10').hide();
+    $('.refgroup11').hide();
+    $('.refgroup12').hide();
+    $('.refgroup13').hide();
+    $('.refgroup14').hide();
+    $('.refgroup15').hide();
+    $('.refgroup16').hide();
+    $('.refgroup17').hide();
+    $('.refgroup18').hide();
+    $('.refgroup19').hide();
+    $('.refgroup20').hide();
+    $('.refgroup21').hide();
+    $('.refgroup22').hide();
+    $('.refgroup23').hide();
+    $('.refgroup24').hide();
+    $('.refgroup25').hide();
 
     $('#back').hide();
     $('#typeit').click(function(){
@@ -660,7 +683,22 @@ $(function(){
     $('#ref2cont').hide();
     $('#ref3cont').hide();
     $('#ref4cont').hide();
-    
+    $('#ref5cont').hide();
+    $('#ref6cont').hide();
+    $('#ref7cont').hide();
+    $('#ref8cont').hide();
+    $('#ref9cont').hide();
+    $('#ref10cont').hide();
+    $('#ref11cont').hide();
+    $('#ref12cont').hide();
+    $('#ref13cont').hide();
+    $('#ref14cont').hide();
+    $('#ref15cont').hide();
+    $('#ref16cont').hide();
+    $('#ref17cont').hide();
+    $('#ref18cont').hide();
+
+
     $('#ref1').click(function(){
         $('#ref1cont').toggle();
     });
@@ -675,6 +713,62 @@ $(function(){
 
     $('#ref4').click(function(){
         $('#ref4cont').toggle();
+    });
+
+    $('#ref5').click(function(){
+        $('#ref5cont').toggle();
+    });
+
+    $('#ref6').click(function(){
+        $('#ref6cont').toggle();
+    });
+
+    $('#ref7').click(function(){
+        $('#ref7cont').toggle();
+    });
+
+    $('#ref8').click(function(){
+        $('#ref8cont').toggle();
+    });
+
+    $('#ref9').click(function(){
+        $('#ref9cont').toggle();
+    });
+
+    $('#ref10').click(function(){
+        $('#ref10cont').toggle();
+    });
+
+    $('#ref11').click(function(){
+        $('#ref11cont').toggle();
+    });
+
+    $('#ref12').click(function(){
+        $('#ref12cont').toggle();
+    });
+
+    $('#ref13').click(function(){
+        $('#ref13cont').toggle();
+    });
+
+    $('#ref14').click(function(){
+        $('#ref14cont').toggle();
+    });
+
+    $('#ref15').click(function(){
+        $('#ref15cont').toggle();
+    });
+
+    $('#ref16').click(function(){
+        $('#ref16cont').toggle();
+    });
+
+    $('#ref17').click(function(){
+        $('#ref17cont').toggle();
+    });
+
+    $('#ref18').click(function(){
+        $('#ref18cont').toggle();
     });
 
 });   

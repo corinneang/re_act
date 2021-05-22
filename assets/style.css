@@ -306,6 +306,11 @@ img {
     overflow-y: scroll;
 }
 
+.refimg {
+    border: 1px solid black;
+    width:99%;
+}
+
 .references > button {
     background: none;
     border: none;
@@ -562,21 +567,37 @@ img {
        position: relative;
        height: 5.5rem;
        font-size: 0;
+       width: calc(10rem - 8px);
    }
 
    .describe {
     align-self: center;
        display: flex;
-       justify-content: space-between;
        font-size: 0.25rem;
        height: 5.2rem;
        width: 97.5%;
    }
+   .describe1{
+    flex-grow: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   }
 
-    .describe > img{
+   .describe2 {
+        flex-grow: 6;
+        overflow:hidden;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .describe2 > img{
+        align-self: center;
         height: 100%;
         width: auto;
     }
+
 
 ::-webkit-scrollbar {
     display: none;
