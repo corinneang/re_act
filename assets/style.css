@@ -204,6 +204,20 @@ img {
     overflow-y: scroll;
 }
 
+.sidebysideimg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 22.5rem;
+    margin-bottom: 0.4rem;
+}
+
+.sidebysideimg > img{
+    height: 100%;
+    width: auto;
+}
+
 .relative {
     position: relative;
 }
