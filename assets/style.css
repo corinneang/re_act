@@ -34,7 +34,6 @@
 }
 
 body {
-    font-family: "monobloc-sans";
     -webkit-font-smoothing: antialiased;
     margin: 0;
     padding: 0;
@@ -329,7 +328,6 @@ img {
     background: none;
     border: none;
     margin: 0 0 10px 0;
-    font-family: "monobloc-sans";
     font-size: 1rem;
 }
 
