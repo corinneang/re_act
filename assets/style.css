@@ -610,6 +610,12 @@ img {
         width: auto;
     }
 
+    .describe2 > img.website{
+        align-self: center;
+        height: auto;
+        width: 90%;
+    }
+
 
 ::-webkit-scrollbar {
     display: none;
